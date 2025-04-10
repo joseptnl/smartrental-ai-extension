@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "React Chrome Extension with Chadcn",
+    "version": "1.0.0",
+    "description": "A Chrome extension built with React, Chadcn, and Tailwind CSS",
+    "permissions": ["scripting"],
+    "host_permissions": ["https://*/*", "http://*/*"],
+    "background": {
+      "service_worker": "public/background.js",
+      "type": "module"
+    },
+    "action": {
+      "default_popup": "dist/index.html"
+    }
+  }
